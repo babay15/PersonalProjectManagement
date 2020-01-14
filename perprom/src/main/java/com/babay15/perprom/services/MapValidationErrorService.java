@@ -28,7 +28,7 @@ public class MapValidationErrorService {
         }
 
         if (detailedError != null) {
-            responseBody.put("detailedError", detailedError);
+            responseBody.put("data", detailedError);
         }
 
         return new ResponseEntity<Map<String, Object>>(responseBody, HttpStatus.BAD_REQUEST);
